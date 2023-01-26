@@ -91,14 +91,120 @@ body
 	margin-top: -30px;
 }
 
-/** Large **/
-@media (min-width: 1200px)
+.container .jumbotron 
 {
+	box-shadow: 0 0 50px #0d1424;
+	border: 2px solid #0d1424;
+}
 
+#trips-tile, #trajectories-tile, #gear-tile
+{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #0d1424;
+	overflow: hidden;
+}
+
+#trips-tile:hover, #trajectories-tile:hover, #gear-tile:hover
+{
+	box-shadow: 0 1px 5px 1px #0d1424
+}
+
+#trips-tile:hover span, #trajectories-tile:hover span, #gear-tile:hover span 
+{
+	opacity: 1;
+}
+
+#trips-tile {
+	background: url("../images/trips_tile.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#trajectories-tile {
+	background: url("../images/trajectories_tile.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#gear-tile {
+	background: url("../images/gear_tile.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#trips-tile span, #trajectories-tile span, #gear-tile span
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+/** Extra small **/
+@media (max-width: 767px) 
+{
+	.navbar-brand 
+	{
+		padding-top: 10px;
+		height: 80px;
+	}
+
+		.navbar-brand h1 
+		{
+			padding-top: 10px;
+			font-size: 5vw;
+		}
+
+		.navbar-brand p 
+		{
+			text-transform: uppercase;
+			font-size: .6em;
+			margin-top: 12px;
+		}
+
+			.navbar-brand p img 
+			{
+				height: 20px;
+			}
+
+	#collapsable-nav a 
+	{
+		font-size: 1.4em;
+	}
+
+		#collapsable-nav a span 
+		{
+			font-size: 1em;
+			margin-right: 5px;
+		}
+
+	.container .jumbotron 
+	{
+		margin-top: 30px;
+		padding: 0px;
+	}
+}
+
+/** Small **/
+@media (min-width: 768px)
+{
+	.container .jumbotron {
+		background: url("../images/jumbotron_768.jpg") no-repeat;
+		height: 345px;
+	}
 }
 
 /** Medium **/
-@media (min-width: 992px) and (max-width: 1199px)
+@media (min-width: 992px)
 {
 	#logo-img
 	{
@@ -106,50 +212,23 @@ body
 		height: 100px;
 		margin: 5px 5px 5px 0;
 	}
+	.container .jumbotron {
+		background: url("../images/jumbotron_992.jpg") no-repeat;
+		height: 446px;
+	}
 }
 
-/** Small **/
-@media (min-width: 768px) and (max-width: 991px)
+/** Large **/
+@media (min-width: 1200px)
 {
-
-}
-
-/** Extra small **/
-@media (max-width: 767.999px)
-{
-	.navbar-brand
-	{
-		padding-top: 10px;
-		height: 80px;
-	}
-
-	.navbar-brand h1
-	{
-		padding-top: 10px;
-		font-size: 5vw;
-	}
-
-	.navbar-brand p 
-	{
-		text-transform: uppercase;
-		font-size: .6em;
-		margin-top: 12px;
-	}
-
-	.navbar-brand p img 
-	{
-		height: 20px;
-	}
-
-	#collapsable-nav a 
-	{
-		font-size: 1.4em;
-	}
-
-	#collapsable-nav a span
-	{
-		font-size: 1em;
-		margin-right: 5px;
+	.container .jumbotron {
+		background: url("../images/jumbotron_1200.jpg") no-repeat;
+		height: 540px;
 	}
 }
+
+
+
+
+
 
