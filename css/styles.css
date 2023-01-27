@@ -1,234 +1,214 @@
-body 
-{
-	font-size: 16px;
-	color: #0d1424;
-	background-color: #A4C0E0;
-	font-family: 'Oxygen', sans-serif;
+body {
+    font-size: 16px;
+    color: #0d1424;
+    background-color: #fff;
+    font-family: 'Oxygen', sans-serif;
 }
 
-#header-nav 
-{
-	background-color: #7a7e86;
-	border-radius: 0;
-	border: 0;
+#header-nav {
+    background-color: #fff;
+    border-radius: 0;
+    border-bottom: 2px solid;
 }
 
-#logo-img
-{
-	background: url("../images/logo.jpg") no-repeat;
-	background-size: contain;
-	width: 150px;
-	height: 150px;
-	margin: 10px 15px 10px 0px;
+#logo-img {
+   /* background: url("../images/logo.jpg") no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0px;*/
 }
 
-.navbar-brand
-{
-	padding-top: 25px;
+.navbar-brand {
+    padding-top: 25px;
 }
 
-.navbar-brand h1
-{
-	font-family: "Oxygen", sans-serif;
-	color: #0d1424;
-	font-size: 2em;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
-	margin-top: 0;
-	margin-bottom: 0;
-	line-height: .75;
+    .navbar-brand h1 {
+        font-family: "Oxygen", sans-serif;
+        color: #0d1424;
+        font-size: 2em;
+        /*text-transform: uppercase; */
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #222;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: .75;
+    }
+
+    .navbar-brand a:hover, .navbar-brand a:focus {
+        text-decoration: none;
+    }
+
+    .navbar-brand p {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+        .navbar-brand p span {
+            vertical-align: middle;
+        }
+
+#nav-list {
+    margin-top: 10px;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus
-{
-	text-decoration: none;
+    #nav-list a {
+        color: #0d1424;
+        text-align: center;
+    }
+
+        #nav-list a:hover {
+            background: #E7E7E7;
+        }
+
+        #nav-list a span {
+            font-size: 1.8em;
+        }
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 2px solid #0d1424;
 }
 
-.navbar-brand p
-{
-	color: #000;
-	text-transform: uppercase;
-	font-size: 0.7em;
-	font-weight: bold;
-	margin-top: 15px;
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
 }
 
-.navbar-brand p span
-{
-	vertical-align: middle;
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-top: 2px solid;
+    border-color: #000;
 }
 
-#nav-list
+.panel-footer div.row
 {
-	margin-top: 10px;
+    margin-bottom: 35px;
 }
 
-#nav-list a
-{
-	color: #0d1424;
-	text-align: center;
+
+.container .jumbotron {
+    box-shadow: 0 0 50px #0d1424;
+    border: 2px solid #0d1424;
 }
 
-#nav-list a:hover
-{
-	background: #E7E7E7;
+#trips-tile, #trajectories-tile, #gear-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #0d1424;
+    overflow: hidden;
 }
 
-#nav-list a span
-{
-	font-size: 1.8em;
-}
+    #trips-tile:hover, #trajectories-tile:hover, #gear-tile:hover {
+        box-shadow: 0 1px 5px 1px #0d1424
+    }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar 
-{
-	border: 2px solid #0d1424;
-}
-
-.navbar-header button.navbar-toggle
-{
-	clear: both;
-	margin-top: -30px;
-}
-
-.container .jumbotron 
-{
-	box-shadow: 0 0 50px #0d1424;
-	border: 2px solid #0d1424;
-}
-
-#trips-tile, #trajectories-tile, #gear-tile
-{
-	height: 250px;
-	width: 100%;
-	margin-bottom: 15px;
-	position: relative;
-	border: 2px solid #0d1424;
-	overflow: hidden;
-}
-
-#trips-tile:hover, #trajectories-tile:hover, #gear-tile:hover
-{
-	box-shadow: 0 1px 5px 1px #0d1424
-}
-
-#trips-tile:hover span, #trajectories-tile:hover span, #gear-tile:hover span 
-{
-	opacity: 1;
-}
+        #trips-tile:hover span, #trajectories-tile:hover span, #gear-tile:hover span {
+            opacity: 1;
+        }
 
 #trips-tile {
-	background: url("../images/trips_tile.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+    background: url("../images/trips_tile.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #trajectories-tile {
-	background: url("../images/trajectories_tile.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+    background: url("../images/trajectories_tile.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #gear-tile {
-	background: url("../images/gear_tile.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
+    background: url("../images/gear_tile.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-#trips-tile span, #trajectories-tile span, #gear-tile span
-{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	text-align: center;
-	font-size: 1.6em;
-	text-transform: uppercase;
-	background-color: #000;
-	color: #fff;
-	opacity: .8;
-}
+    #trips-tile span, #trajectories-tile span, #gear-tile span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        background-color: #000;
+        color: #fff;
+        opacity: .8;
+    }
 
 /** Extra small **/
-@media (max-width: 767px) 
-{
-	.navbar-brand 
-	{
-		padding-top: 10px;
-		height: 80px;
-	}
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
 
-		.navbar-brand h1 
-		{
-			padding-top: 10px;
-			font-size: 5vw;
-		}
+        .navbar-brand h1 {
+            padding-top: 10px;
+            font-size: 5vw;
+        }
 
-		.navbar-brand p 
-		{
-			text-transform: uppercase;
-			font-size: .6em;
-			margin-top: 12px;
-		}
+        .navbar-brand p {
+            text-transform: uppercase;
+            font-size: .6em;
+            margin-top: 12px;
+        }
 
-			.navbar-brand p img 
-			{
-				height: 20px;
-			}
+            .navbar-brand p img {
+                height: 20px;
+            }
 
-	#collapsable-nav a 
-	{
-		font-size: 1.4em;
-	}
+    #collapsable-nav a {
+        font-size: 1.4em;
+    }
 
-		#collapsable-nav a span 
-		{
-			font-size: 1em;
-			margin-right: 5px;
-		}
+        #collapsable-nav a span {
+            font-size: 1em;
+            margin-right: 5px;
+        }
 
-	.container .jumbotron 
-	{
-		margin-top: 30px;
-		padding: 0px;
-	}
+    .container .jumbotron {
+        margin-top: 30px;
+        padding: 0px;
+    }
 }
 
 /** Small **/
-@media (min-width: 768px)
-{
-	.container .jumbotron {
-		background: url("../images/jumbotron_768.jpg") no-repeat;
-		height: 345px;
-	}
+@media (min-width: 768px) {
+    .container .jumbotron {
+        background: url("../images/jumbotron_768.jpg") no-repeat;
+        height: 345px;
+    }
 }
 
 /** Medium **/
-@media (min-width: 992px)
-{
-	#logo-img
-	{
-		width: 100px;
-		height: 100px;
-		margin: 5px 5px 5px 0;
-	}
-	.container .jumbotron {
-		background: url("../images/jumbotron_992.jpg") no-repeat;
-		height: 446px;
-	}
+@media (min-width: 992px) {
+    #logo-img {
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+
+    .container .jumbotron {
+        background: url("../images/jumbotron_992.jpg") no-repeat;
+        height: 446px;
+    }
 }
 
 /** Large **/
-@media (min-width: 1200px)
-{
-	.container .jumbotron {
-		background: url("../images/jumbotron_1200.jpg") no-repeat;
-		height: 540px;
-	}
+@media (min-width: 1200px) {
+    .container .jumbotron {
+        background: url("../images/jumbotron_1200.jpg") no-repeat;
+        height: 540px;
+    }
 }
-
-
-
-
-
-
